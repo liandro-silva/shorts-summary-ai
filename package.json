@@ -1,0 +1,27 @@
+{
+  "name": "shorts-summary-ai",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "author": "Liandro Silva",
+  "description": "A web application to create a summary of YouTube shorts using AI",
+  "scripts": {
+    "dev:web": "vite",
+    "build:web": "vite build",
+    "preview:web": "vite preview",
+    "dev:server": "env YTDL_NO_UPDATE=1 node --watch --no-warnings ./server/index.js"
+  },
+  "devDependencies": {
+    "vite": "^5.2.0"
+  },
+  "dependencies": {
+    "@xenova/transformers": "^2.16.1",
+    "axios": "^1.6.8",
+    "cors": "^2.8.5",
+    "express": "^4.19.2",
+    "ffmpeg-static": "^5.2.0",
+    "fluent-ffmpeg": "^2.1.2",
+    "node-wav": "^0.0.2",
+    "ytdl-core": "4.10.0"
+  }
+}
